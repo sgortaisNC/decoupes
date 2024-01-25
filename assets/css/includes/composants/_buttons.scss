@@ -21,10 +21,25 @@ input[type="checkbox"], input[type="radio"]{
   padding: 20px 42px;
   border-radius: 50px;
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 
   &:hover{
     color: var(--pourpre);
     background: #FFFFFF;
+  }
+
+  svg{
+    margin-top: -3px;
+  }
+
+  &--xs{
+    padding: 10px 20px 6px;
+    font-size: 12px;
+    background: transparent;
+    border-width: 1px;
+    color: var(--fontColor);
   }
 }
 

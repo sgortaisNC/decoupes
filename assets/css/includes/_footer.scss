@@ -1,18 +1,64 @@
 .footer{
-  &__top{
-
+  background: var(--lightGrey);
+  p{
+    margin: 0;
   }
-  &__bottom{
+  &__top{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    gap: 40px;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    color: #95a3ab;
+    text-transform: uppercase;
+  }
+  &__acces{
+    flex: 1;
+  }
+  &__rs{
+    flex: none;
+    display: grid;
+    gap: 10px;
     ul{
       display: flex;
+      gap: 15px;
+      .rs{
+        border: 1px solid var(--vert);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+      }
+    }
+    
+    input{
+      width: 421px;
+      max-width: 100%;
+    }
+  }
+  
+  &__bottom{
+    height: 67px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--bordure);
+    ul{
+      display: flex;
+      gap: 36px;
       li{
         a{
-
+          
         }
       }
     }
     a{
-
+      
     }
   }
 }

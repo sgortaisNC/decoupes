@@ -4,6 +4,7 @@
   --pourpre: #AC3053;
   --fontColor: #4B7388;
   --bordure: #95A3AB;
+  --lightGrey: #F7F8F9;
   --transition: 0.5s all ease-in-out;
   --radius: 8px;
 }
@@ -104,8 +105,59 @@ h2::after {
 .header__bottom nav ul {
   display: flex;
 }
+.footer {
+  background: var(--lightGrey);
+}
+.footer p {
+  margin: 0;
+}
+.footer__top {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 40px;
+}
+.footer__title {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: #95a3ab;
+  text-transform: uppercase;
+}
+.footer__acces {
+  flex: 1;
+}
+.footer__rs {
+  flex: none;
+  display: grid;
+  gap: 10px;
+}
+.footer__rs ul {
+  display: flex;
+  gap: 15px;
+}
+.footer__rs ul .rs {
+  border: 1px solid var(--vert);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.footer__rs input {
+  width: 421px;
+  max-width: 100%;
+}
+.footer__bottom {
+  height: 67px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--bordure);
+}
 .footer__bottom ul {
   display: flex;
+  gap: 36px;
 }
 .wysiwyg a:not([class]) {
   text-decoration: underline;
@@ -150,10 +202,23 @@ input[type=checkbox], input[type=radio] {
   padding: 20px 42px;
   border-radius: 50px;
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .btn:hover {
   color: var(--pourpre);
   background: #FFFFFF;
+}
+.btn svg {
+  margin-top: -3px;
+}
+.btn--xs {
+  padding: 10px 20px 6px;
+  font-size: 12px;
+  background: transparent;
+  border-width: 1px;
+  color: var(--fontColor);
 }
 
 .type {
@@ -167,6 +232,40 @@ input[type=checkbox], input[type=radio] {
   background: var(--fontColor);
   letter-spacing: 0.05em;
   transition: var(--transition);
+}
+
+input {
+  height: 55px;
+  border-radius: 55px;
+  padding-left: 25px;
+  padding-right: 75px;
+  border: 1px solid var(--bordure);
+}
+
+.input-grouped {
+  position: relative;
+}
+.input-grouped button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  right: 0;
+  aspect-ratio: 1;
+  background: var(--pourpre);
+}
+
+::-moz-placeholder {
+  font-family: "League Spartan", sans-serif;
+  color: var(--fontColor);
+}
+
+::placeholder {
+  font-family: "League Spartan", sans-serif;
+  color: var(--fontColor);
 }
 
 .sidebar-block ul {
@@ -364,6 +463,4 @@ input[type=checkbox], input[type=radio] {
 }
 .meta-datas > div svg {
   margin-top: -5px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
