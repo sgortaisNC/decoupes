@@ -127,6 +127,24 @@ h2::after {
 .footer__acces {
   flex: 1;
 }
+.footer__acces ul {
+  margin-top: 15px;
+}
+.footer__acces li {
+  margin-bottom: 25px;
+}
+.footer__acces a {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 28px;
+  transition: var(--transition);
+  color: #4b7388;
+  padding-left: 0;
+}
+.footer__acces a:hover {
+  color: var(--pourpre);
+  padding-left: 15px;
+}
 .footer__rs {
   flex: none;
   display: grid;

@@ -18,6 +18,26 @@
   }
   &__acces{
     flex: 1;
+    ul{
+      margin-top: 15px;
+    }
+    li{
+      margin-bottom: 25px;
+    }
+    a{
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 28px;
+      transition: var(--transition);
+      color: #4b7388;
+      padding-left: 0;
+
+      &:hover{
+        color: var(--pourpre);
+        padding-left: 15px;
+      }
+      
+    }
   }
   &__rs{
     flex: none;
